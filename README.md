@@ -1,5 +1,15 @@
 #  reqres.in - Автотесты  API 
 > <a target="_blank" href="https://reqres.in/">Линк на страницу сайта</a>
+
+## :page_with_curl: Содержание:
+
+- [Технологии и инструменты](#techno-технологии-и-инструменты)
+- [Запуск из терминала](#arrow_forward-запуск-из-терминала)
+- [Сборка в Jenkins](#jenkins-Jenkins-job)
+- [Allure отчет](#report-Allure-отчет)
+- [Отчет в Telegram](#telegram-Уведомление-в-Telegram-при-помощи-бота)
+
+<a name="techno-технологии-и-инструменты"></a>
 ## :computer: Технологии и инструменты
 
 <p align="center">
@@ -14,17 +24,6 @@
 <img width="8%" title="Allure TestOps" src="images/logo/AllureTestOps.svg">
 <img width="8%" title="Telegram" src="images/logo/Telegram.svg">
 </p>
-
-## :page_with_curl: Содержание:
-
-- [Технологии и инструменты](#techno-технологии-и-инструменты)
-- [Запуск из терминала](#arrow_forward-запуск-из-терминала)
-- [Сборка в Jenkins](#jenkins-Jenkins-job)
-- [Allure отчет](#report-Allure-отчет)
-- [Отчет в Telegram](#telegram-Уведомление-в-Telegram-при-помощи-бота)
-
-<a name="techno-технологии-и-инструменты"></a>
-
 
 <a name="arrow_forward-запуск-из-терминала"></a>
 ## :keyboard: Запуск из терминала
