@@ -1,25 +1,16 @@
 plugins {
     id 'java-library'
     id "io.qameta.allure" version "2.9.6"
+    id "io.freefair.lombok" version "6.5.0-rc1"
 }
 
 repositories {
     mavenCentral()
 }
 
-def junitVersion = "5.8.2",
-    slfVersion = "1.7.36",
-    allureVersion = "2.17.3",
-    restAssuredVersion = "4.5.1",
-    lombokVersion = "1.18.10",
-    selenideVersion = "6.5.0",
-    fakerVersion = "1.0.2"
-
+def allureVersion = '2.18.1'
 
 allure {
-    report {
-        version.set(allureVersion)
-    }
     adapter {
         aspectjWeaver.set(true)
         frameworks {
@@ -28,35 +19,25 @@ allure {
             }
         }
     }
+    report {
+        version.set(allureVersion)
+    }
 }
-
 
 dependencies {
     testImplementation(
-            "io.qameta.allure:allure-selenide:$allureVersion",
+            "io.rest-assured:rest-assured:4.2.0",
+            "org.aeonbits.owner:owner:1.0.12",
+            "com.fasterxml.jackson.core:jackson-databind:2.11.2",
+            "org.junit.jupiter:junit-jupiter-params:5.6.2",
+            "org.assertj:assertj-core:3.22.0",
             "io.qameta.allure:allure-rest-assured:$allureVersion",
-            "org.junit.jupiter:junit-jupiter:$junitVersion",
-            "org.slf4j:slf4j-simple:$slfVersion",
-            "io.rest-assured:rest-assured:$restAssuredVersion",
-            "org.projectlombok:lombok:$lombokVersion",
-            'org.aeonbits.owner:owner:1.0.4',
-            'com.google.code.gson:gson:2.8.9',
-            'com.github.javafaker:javafaker:1.0.2',
-            "com.codeborne:selenide:$selenideVersion",
-            "com.github.javafaker:javafaker:$fakerVersion"
+            "org.slf4j:slf4j-simple:1.7.36",
+            "org.junit.jupiter:junit-jupiter-api:5.6.2",
+            "org.junit.jupiter:junit-jupiter-engine:5.6.2",
     )
 }
 
 tasks.withType(Test) {
-    systemProperties(System.getProperties())
     useJUnitPlatform()
-
-    if (System.getProperty("threads") != null) {
-        systemProperties += [
-                'junit.jupiter.execution.parallel.enabled'                 : true,
-                'junit.jupiter.execution.parallel.mode.default'            : 'concurrent',
-                'junit.jupiter.execution.parallel.mode.classes.default'    : 'concurrent',
-                'junit.jupiter.execution.parallel.config.strategy'         : 'fixed',
-                'junit.jupiter.execution.parallel.config.fixed.parallelism': System.getProperty("threads").toInteger()
-        ]
-    }}
+}
