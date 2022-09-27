@@ -35,7 +35,7 @@ gradle clean test
 
 <a name="jenkins-Jenkins-job"></a>
 ## :robot: Сборки в Jenkins
-### <a target="_blank" href="https://jenkins.autotests.cloud/job/qa_guru_Jenkinsjob_MyApiDiploma/">Параметризированная сборка в Jenkins со всеми тестами</a>
+### <a target="_blank" href="https://jenkins.autotests.cloud/job/012-IvanSidorenko-12_%20regres.inApiTesting/">Параметризированная сборка в Jenkins со всеми тестами</a>
 <p align="center">
 <img title="Jenkins Job Run with parameters" src="images/screenshots/Screenshot_401.png">
 </p>
