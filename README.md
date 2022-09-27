@@ -37,33 +37,25 @@ gradle clean test
 ## :robot: Сборки в Jenkins
 ### <a target="_blank" href="https://jenkins.autotests.cloud/job/qa_guru_Jenkinsjob_MyApiDiploma/">Параметризированная сборка в Jenkins со всеми тестами</a>
 <p align="center">
-<img title="Jenkins Job Run with parameters" src="images/screenshots/Screenshot 2022-09-11 at 14.15.04.png">
+<img title="Jenkins Job Run with parameters" src="images/screenshots/Screenshot_401.png">
 </p>
 
 <a name="report-Allure-отчет"></a>
 ## :bar_chart: Allure отчет
 - ### Главный экран отчета
 <p align="center">
-<img title="Allure Overview Dashboard" src="images/screenshots/Screenshot 2022-09-11 at 14.17.52.png">
+<img title="Allure Overview Dashboard" src="images/screenshots/Screenshot_402.png">
 </p>
 
 - ### Страница с проведенными тестами
 <p align="center">
-<img title="Allure Test Page" src="images/screenshots/Screenshot 2022-09-11 at 14.19.32.png">
+<img title="Allure Test Page" src="images/screenshots/Screenshot_403.png">
 </p>
 
-
-<p align="center">
-  <img src="images/screenshots/Screenshot 2022-09-11 at 14.20.54.png" alt="job">
-</p>
-
-<p align="center">
-  <img src="images/screenshots/Screenshot 2022-09-11 at 14.22.40.png" alt="job">
-</p>
 
 <a name="telegram-Уведомление-в-Telegram-при-помощи-бота"></a>
 ## :robot: Отчет в Telegram
 - ### Telegram notification message (all results)
 <p align="center">
-  <img src="images/screenshots/Screenshot 2022-09-11 at 14.23.57.png" alt="job">
+  <img src="images/screenshots/Screenshot_399.png" alt="job">
 </p>
