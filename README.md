@@ -1,5 +1,5 @@
 #  reqres.in - Автотесты  API 
-> <a target="_blank" href="https://reqres.in/">Линк на страницу сайта</a>
+> <a target="_blank" href="https://reqres.in/">Ссылка на страницу сайта</a>
 
 ## :page_with_curl: Содержание:
 
